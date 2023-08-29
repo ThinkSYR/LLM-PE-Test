@@ -28,7 +28,7 @@ DEFAULT_SYSTEM_PROMPT = """You are a helpful assistant. 你是一个乐于助人
 DEFAULT_LONG_SYSTEM_PROMPT = """You are a helpful assistant. 你是一个乐于助人的助手。请你提供专业、有逻辑、内容真实、有价值的详细回复。"""
 TEMPLATE = (
     "[INST] <<SYS>>\n"
-    "{system_prompt}\n"
+    f"{DEFAULT_SYSTEM_PROMPT}\n"
     "<</SYS>>\n\n"
     "{instruction} [/INST]"
 )
@@ -48,8 +48,8 @@ context = '\n\n'.join(contexts)
 raw_input_text = '%s\n\n%s' % (context, question)
 print("input length: ", len(raw_input_text))
 
-def generate_prompt(instruction, system_prompt=DEFAULT_SYSTEM_PROMPT):
-    return TEMPLATE.format_map({'instruction': instruction,'system_prompt': system_prompt})
+def generate_prompt(instruction):
+    return TEMPLATE.format_map({'instruction': instruction})
 
 def generate():
     generation_config = GenerationConfig(
