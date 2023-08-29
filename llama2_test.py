@@ -68,7 +68,7 @@ question = """请仔细阅读材料，然后回答：
 - 哪个演员由于侮辱人民军队而被立案调查？
 - 哪个项目宣称“能过坦克”的水上道路？
 - 如果你是默沙东的CEO，你的首要任务是什么？"""
-contexts = json.load(open('data/contexts.json')) + json.load(open('data/contexts.100.json'))[:6]
+contexts = json.load(open('data/contexts.json')) + json.load(open('data/contexts.100.json'))[:10]
 context = '\n\n'.join(contexts)
 raw_input_text = '%s\n\n%s' % (context, question)
 logger.info(f"input context length: {len(raw_input_text)}")
@@ -112,7 +112,7 @@ def generate(tokenizer, model):
     with torch.no_grad():
         input_text = TEMPLATE.generate_prompt(raw_input_text)
         
-        inputs = tokenizer(input_text, padding='longest', return_tensors="pt").to(device)  #add_special_tokens=False ?
+        inputs = tokenizer(input_text, return_tensors="pt").to(device)  #add_special_tokens=False ?
         generation_output = model.generate(
             input_ids = inputs["input_ids"],
             attention_mask = inputs['attention_mask'],

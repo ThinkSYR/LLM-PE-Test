@@ -26,7 +26,7 @@ class Template(object):
         return output
 
 @dataclass
-class LLaMA2_CH_Template(Template):
+class LLaMA2_CH_Template:
     DEFAULT_SYSTEM_PROMPT = """You are a helpful assistant. 你是一个乐于助人的助手。"""
     DEFAULT_LONG_SYSTEM_PROMPT = """You are a helpful assistant. 你是一个乐于助人的助手。请你提供专业、有逻辑、内容真实、有价值的详细回复。"""
     TEMPLATE = (
@@ -43,7 +43,7 @@ class LLaMA2_CH_Template(Template):
         return output.split("[/INST]")[-1].strip()
 
 @dataclass
-class LLaMA2_Buddy_Template(Template):
+class LLaMA2_Buddy_Template:
     TEMPLATE = "User: {instruction}\n\nAssistant"
     
     def generate_prompt(self, instruction):
