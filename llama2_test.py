@@ -5,7 +5,7 @@ import time
 from loguru import logger
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--model_path', default='models/chinese-alpaca-2-7b-hf', type=str, help="If None, perform inference on the base model")
+parser.add_argument('--model_path', type=str, default='models/chinese-alpaca-2-7b-hf', help="If None, perform inference on the base model")
 parser.add_argument('--gpus', type=str, default="0", help='gpu id(default: 0)')
 parser.add_argument('--pe', type=str, default="None", help="PE type")
 parser.add_argument('--alpha', type=str, default="1.0", help="The scaling factor of NTK method, can be a float or 'auto'. ")
@@ -67,7 +67,8 @@ question = """请仔细阅读材料，然后回答：
 - 中亚峰会将在哪里举行？由谁主持？
 - 哪个演员由于侮辱人民军队而被立案调查？
 - 哪个项目宣称“能过坦克”的水上道路？
-- 如果你是默沙东的CEO，你的首要任务是什么？"""
+- 如果你是默沙东的CEO，你的首要任务是什么？
+- 中行贪污事件中，对余振东的判决是什么？"""
 contexts = json.load(open('data/contexts.json')) + json.load(open('data/contexts.100.json'))[:10]
 context = '\n\n'.join(contexts)
 raw_input_text = '%s\n\n%s' % (context, question)
