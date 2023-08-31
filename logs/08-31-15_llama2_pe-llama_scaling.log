@@ -1,0 +1,72 @@
+2023-08-31 15:12:43.014 | INFO     | __main__:<module>:80 - input context length: 6922
+2023-08-31 15:13:08.847 | INFO     | __main__:load_model:97 - Vocab of the base model: 37632
+2023-08-31 15:13:08.848 | INFO     | __main__:load_model:98 - Vocab of the tokenizer: 37632
+2023-08-31 15:13:10.009 | INFO     | utils:wrapper:13 - [TIME] load_model time elapsed: 26.99414300918579 secs.
+2023-08-31 15:14:17.191 | INFO     | __main__:generate:133 - Response: 
+* 菲律宾国家电网公司，中国占股40%。
+* 领英计划裁员716人。
+* 吉利德收购Pharmasset的价格为1100亿美元。
+* Sovaldi在2013年上市。
+* 中亚峰会将在陕西省西安市举行，由国家主席习近平主持并发表重要讲话。
+* 涉嫌侮辱人民军队的演员是许国俊。
+* 宣恩县狮子关网红浮桥项目。
+* 吉利德的首要任务是让基本盘更加坚固，寻找到突破性技术并在行业中安身立命。
+* 对于涉嫌诈骗的两名好闺蜜，因涉嫌诈骗罪已被检察机关依法逮捕。
+
+2023-08-31 15:14:17.192 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 67.18137717247009 secs.
+2023-08-31 15:15:20.131 | INFO     | __main__:generate:133 - Response: 
+* 菲律宾国家电网公司，中国占股40%。
+* 领英计划裁员716人。
+* 吉利德收购Pharmasset的价格为1100亿美元。
+* Sovaldi在2013年上市。
+* 中亚峰会将在陕西省西安市举行，由国家主席习近平主持。
+* 涉嫌侮辱人民军队的演员是许国俊。
+* 宣恩县狮子关网红浮桥项目。
+* 首要任务是让基本盘更加坚固，寻找到突破性技术并在行业中安身立命。
+* 对于涉案的徐振东，法院宣布有期徒刑12年，并处罚罚款100万元。
+
+2023-08-31 15:15:20.131 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 60.93709444999695 secs.
+2023-08-31 15:16:19.217 | INFO     | __main__:generate:133 - Response: 
+* 菲律宾国家电网公司，中国占股40%。
+* 领英计划裁员716人。
+* 吉利德收购Pharmasset的价格为1100亿美元。
+* Sovaldi在2013年上市。
+* 中亚峰会将在陕西省西安市举行，由国家主席习近平主持。
+* 涉事的演员是李昊石。
+* 狮子关网红浮桥项目。
+* 吉利德的首要任务是让基本盘更加坚固，寻找到突破性技术。
+* 对于涉案的徐振东，法院宣布有期徒刑12年，并处罚款100万元。
+
+2023-08-31 15:16:19.219 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 57.085063457489014 secs.
+2023-08-31 15:28:06.270 | INFO     | __main__:<module>:80 - input context length: 14795
+2023-08-31 15:28:28.255 | INFO     | __main__:load_model:97 - Vocab of the base model: 37632
+2023-08-31 15:28:28.256 | INFO     | __main__:load_model:98 - Vocab of the tokenizer: 37632
+2023-08-31 15:28:29.313 | INFO     | utils:wrapper:13 - [TIME] load_model time elapsed: 23.041862964630127 secs.
+2023-08-31 15:28:38.767 | INFO     | __main__:generate:133 - Response: 
+
+
+2023-08-31 15:28:38.768 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 9.45458173751831 secs.
+2023-08-31 15:28:47.527 | INFO     | __main__:generate:133 - Response: 
+
+
+2023-08-31 15:28:47.528 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 6.757686138153076 secs.
+2023-08-31 15:28:56.230 | INFO     | __main__:generate:133 - Response: 
+
+
+2023-08-31 15:28:56.231 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 6.7006676197052 secs.
+2023-08-31 15:46:56.299 | INFO     | __main__:<module>:80 - input context length: 10575
+2023-08-31 15:47:19.377 | INFO     | __main__:load_model:97 - Vocab of the base model: 37632
+2023-08-31 15:47:19.378 | INFO     | __main__:load_model:98 - Vocab of the tokenizer: 37632
+2023-08-31 15:47:20.473 | INFO     | utils:wrapper:13 - [TIME] load_model time elapsed: 24.173794269561768 secs.
+2023-08-31 15:47:38.611 | INFO     | __main__:generate:133 - Response: 
+I'm sorry, but I am unable to answer your questions as they are not related to the provided text. Can you please provide more context or a specific topic for me to assist you?
+
+2023-08-31 15:47:38.612 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 18.138486862182617 secs.
+2023-08-31 15:47:56.671 | INFO     | __main__:generate:133 - Response: 
+I'm sorry, but I am not able to answer your questions as they are not related to the text provided. Can you please provide me with a specific topic or prompt for me to assist you?
+
+2023-08-31 15:47:56.671 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 16.0570285320282 secs.
+2023-08-31 15:48:14.253 | INFO     | __main__:generate:133 - Response: 
+I'm sorry, but I am unable to answer your questions as they are not related to the text provided. Can you please provide more context or a specific topic for me to assist you?
+
+2023-08-31 15:48:14.253 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 15.58014726638794 secs.

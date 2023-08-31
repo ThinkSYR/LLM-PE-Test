@@ -1,0 +1,16 @@
+2023-08-31 15:32:22.958 | INFO     | __main__:<module>:80 - input context length: 10575
+2023-08-31 15:32:36.590 | INFO     | __main__:load_model:97 - Vocab of the base model: 55296
+2023-08-31 15:32:36.591 | INFO     | __main__:load_model:98 - Vocab of the tokenizer: 55296
+2023-08-31 15:32:37.278 | INFO     | utils:wrapper:13 - [TIME] load_model time elapsed: 14.319727420806885 secs.
+2023-08-31 15:32:44.763 | INFO     | __main__:generate:133 - Response: 
+- 菲律宾国家电网公司，中国占股多少？
+
+2023-08-31 15:32:44.763 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 7.485008955001831 secs.
+2023-08-31 15:32:51.652 | INFO     | __main__:generate:133 - Response: 
+- 菲律宾国家电网公司，中国占股多少？
+
+2023-08-31 15:32:51.653 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 4.886906385421753 secs.
+2023-08-31 15:33:30.958 | INFO     | __main__:generate:133 - Response: 
+1. 菲律宾国家电网公司，中国占股多少？ - 2. 领英计划裁员多少人？ - 吉利德收购Pharmasset的价格是多少？ - 丙肝神药Sovaldi在哪一年上市？ - 中亚峰会将在哪里举行？由谁主持？ - 丙肝神药Sovaldi在哪一年上市？ - 哪一年，中行贪污案件中，对余振东的判决是什么？ - 中亚峰会在哪里举办？由谁主持？ - 丙肝神药Sovaldi在哪一年上市？ - 如果你是默沙东的CEO，你的首要任务是什么？ - 中行贪污案件中，对余振东的判决是什么？
+
+2023-08-31 15:33:30.959 | INFO     | utils:wrapper:13 - [TIME] generate time elapsed: 37.304070472717285 secs.

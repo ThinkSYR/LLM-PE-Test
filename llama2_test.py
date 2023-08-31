@@ -1,4 +1,9 @@
 # -*-coding:utf-8-*-
+"""
+参考:
+https://github.com/bojone/rerope
+https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/blob/main/scripts/inference/inference_hf.py
+"""
 import argparse
 import json, os
 import time
@@ -9,7 +14,7 @@ parser.add_argument('--model_path', type=str, default='models/chinese-alpaca-2-7
 parser.add_argument('--txt', type=str, default='data/context.6719.txt', help="txt file")
 parser.add_argument('--gpus', type=str, default="0", help='gpu id(default: 0)')
 parser.add_argument('--pe', type=str, default="None", help="PE type")
-parser.add_argument('--alpha', type=str, default="1.0", help="The scaling factor of NTK method, can be a float or 'auto'. ")
+parser.add_argument('--alpha', type=str, default="auto", help="The scaling factor of NTK method, can be a float or 'auto'. ")
 parser.add_argument('--temp', type=str, default="llama2_zh", help="Template prompt type")
 parser.add_argument('--repeat', type=int, default=1, help="repeat times")
 args = parser.parse_args()
@@ -102,8 +107,8 @@ def load_model():
 @cal_time
 def generate(tokenizer, model):
     generation_config = GenerationConfig(
-        temperature=0.2,
-        top_k=40,
+        temperature=0.3,
+        top_k=50,
         top_p=0.9,
         do_sample=True,
         num_beams=1,
@@ -132,7 +137,9 @@ def main():
     tokenizer, model = load_model()
     for _ in range(args.repeat):
         generate(tokenizer, model)
+        time.sleep(2)
 
 
 if __name__ == "__main__":
     main()
+    time.sleep(2)
