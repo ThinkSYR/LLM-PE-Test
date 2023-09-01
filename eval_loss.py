@@ -1,4 +1,9 @@
 #! -*- coding: utf-8 -*-
+"""
+Source: https://github.com/bojone/rerope
+Author: bojone
+License: 
+"""
 # 使用llama2-13b测试英文数据集loss
 # transformers 4.31.0 测试通过
 

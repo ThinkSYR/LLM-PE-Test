@@ -1,3 +1,8 @@
+"""
+Source: https://github.com/ymcui/Chinese-LLaMA-Alpaca-2
+Author: ymcui
+License: Apache-2.0 license
+"""
 import torch
 from torch import nn
 from typing import Optional, Tuple, Union

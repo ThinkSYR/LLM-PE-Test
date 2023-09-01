@@ -1,4 +1,9 @@
 #! -*- coding: utf-8 -*-
+"""
+Source: https://github.com/bojone/rerope
+Author: bojone
+License: 
+"""
 # NTK-RoPE-logn-mixed
 # 链接：https://kexue.fm/archives/9706
 # transformers 4.31.0 测试通过
